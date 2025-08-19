@@ -125,8 +125,10 @@ def GerarIqt(app) -> list[str]:
         #atualiza km
         update_distances(sTemp, setup)
     
-        #salvar arquivo
-        out_dir = setup.iqt.Saida
+        # salvar arquivo na pasta Base
+        out_dir = os.path.normpath(setup.iqt.Saida)
+        if os.path.basename(out_dir).lower() != "base":
+            out_dir = os.path.join(out_dir, "Base")
         os.makedirs(out_dir, exist_ok=True)
 
         # 8) Monta o nome completo com extensão
@@ -135,13 +137,14 @@ def GerarIqt(app) -> list[str]:
         out_path = os.path.join(out_dir, nome)
         out_path = os.path.normpath(out_path)
         
-        exists = os.path.exists(out_path)
-        if not exists:
-            # 9) Salva especificando Filename e FileFormat (51 = .xlsx)
-            #OBS: aqui usamos DispatchEx, então chamamos sobre o objeto de Workbook bTemp
-            bTemp.SaveAs(Filename=out_path, FileFormat=51)
+        if os.path.exists(out_path):
+            os.remove(out_path)
 
-            saida.append(out_path)
+        # 9) Salva especificando Filename e FileFormat (51 = .xlsx)
+        # OBS: aqui usamos DispatchEx, então chamamos sobre o objeto de Workbook bTemp
+        bTemp.SaveAs(Filename=out_path, FileFormat=51)
+
+        saida.append(out_path)
     
     bMargem.Close()
     excel.Application.Quit()
