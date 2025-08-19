@@ -1,0 +1,14 @@
+Saida: C:\Program Files\Python312\Projetos\Roteirizacao\Cutof\Base\
+GerarCutof: True
+Formato: '.xlsx'
+Coluna_Cliente: CLIENTE AGV
+Arquivo: PROGRAMACAO
+Cliente:
+  - OURO FINO
+  - ZOETIS
+  - CEVA
+  - ELANCO
+  - MERCK
+  - VIRBAC
+  - VANSIL
+  - DECHRA

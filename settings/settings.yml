@@ -1,0 +1,140 @@
+DOWNLOAD_PATH: 'PROGRAMAÇAO DE TRANSPORTES/PROGRAMAÇÃO_H&N/Roteirização/LANÇAMENTOS MARGEM/'
+SHAREPOINT_PATH: 'PROGRAMAÇAO DE TRANSPORTES/PROGRAMAÇÃO_H&N/Roteirização/FONTE DADOS POWER BI/MARGEM CONSOLIDADA DTG/2025/'
+Modelo: C:/Program Files/Python312/Projetos/Roteirizacao/Margem Consolidada/V3/templates/
+Saida: C:/Program Files/Python312/Projetos/Roteirizacao/Margem Consolidada/V3/saida/
+Formato: '.xlsx'
+Formatar_Excel: True
+Exibir_Excel: True
+Coluna_Cte: 'Número do pedido'
+I_Cte: 3
+F_Cte: 11
+Renomear:
+    ID da rota preferencial: Data
+Colunas:
+  Origem:
+    Nome: 'ORIGEM'
+    Posicao: 21
+  Uf:
+    Nome: 'UF COLETA'
+    Posicao: 22
+Filial:
+  Betim:
+    Arquivo: 'BETIM'
+    Uf: 'MG'
+    Origem: 'BETIM'
+  MT:
+    Arquivo: 'MT'
+    Uf: 'MT'
+    Origem: 'CUIABA'
+  Salvador:
+    Arquivo: 'SALVADOR'
+    Uf: 'BA'
+    Origem: 'SALVADOR'
+  MSD:
+    Arquivo: 'MSD'
+    Uf: 'PR'
+    Origem: 'SAO JOSE DOS PINHAIS'
+  Pinhais:
+    Arquivo: 'PINHAIS'
+    Uf: 'PR'
+    Origem: 'SAO JOSE DOS PINHAIS'
+  Xanxere:
+    Arquivo: 'XANXERE'
+    Uf: 'SC'
+    Origem: 'XANXERE'
+  Uberlandia: 
+    Arquivo: 'UBERLANDIA'
+    Uf: 'MG'
+    Origem: 'UBERLANDIA'
+  Juatuba: 
+    Arquivo: 'JUATUBA'
+    Uf: 'MG'
+    Origem: 'JUATUBA'
+  GO: 
+    Arquivo: 'GO'
+    Uf: 'GO'
+    Origem: 'APARECIDA DE GOIANIA'
+  Poa: 
+    Arquivo: 'POA'
+    Uf: 'RS'
+    Origem: 'CACHOEIRINHA'
+Dtg:
+  Sul:
+    Arquivo: 'SUL'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  Sp:
+    Arquivo: 'SP'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  None_1:
+    Arquivo: 'NONE1'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  None_2:
+    Arquivo: 'NONE2'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  None:
+    Arquivo: 'NONE'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  Ms_Rj:
+    Arquivo: 'MS RJ'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  Mg_Es:
+    Arquivo: 'MG ES'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+  Mg_Es_Massa:
+    Arquivo: 'MG TESTE'
+    Uf: 'SP'
+    Origem: 'VINHEDO'
+Analista:
+  - DAVID
+  - LEONARDO
+  - CLEBER
+  - TAILANI
+  - SAMUEL
+  - DIEGO
+  - FERNANDO
+  - VINICIUS
+  - MARI
+  - ELIANDRA
+  - JOSIELE
+  - EDUARDO
+Coluna_padrao:
+  - ID da rota preferencial
+  - Número do pedido
+  - C L I E N T E_ A G V
+  - Seletor
+  - ID da rota
+  - Instruções especiais
+  - PALETIZACAO
+  - Entrega Peso
+  - Entrega Peso RECEITA
+  - Entrega Valor de NF
+  - Entrega Cubagem
+  - Entrega Cubagem VOLUME
+  - I D_ X D_ O R D E R
+  - Entrega Valor de NF FRACIONADO
+  - Cidade
+  - Estado
+  - Linha de endereço 1
+  - Data de término
+  - Urgência
+  - M O D A L
+  - Cliente
+  - Segmento
+  - C L I M A_1_
+  - C L I M A_2_
+  - C L I M A_3_
+  - C R I O G E N I C O S_
+  - S E C O S_
+  - R E S F R I A D O S_
+  - I N F L A M A V E I S_
+  - CEP
+  - Descrição da rota
+  - CNPJ
+  - Coordenada

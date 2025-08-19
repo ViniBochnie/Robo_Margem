@@ -1,0 +1,13 @@
+#credenciais
+CLIENT_ID: '2843a0e7-9379-48d3-8454-e8f8ec4826cc'
+CLIENT_SECRET: '6ba8Q~.Rhr8gvmhnjWSOTqpBKzKlYvIG~Q8M9deI'
+TENANT_ID: '98eeb008-ff3f-45ee-948e-46481a1ce02a'
+SHAREPOINT_SITE_URL: "flonline.sharepoint.com:/teams/TorredeControle-Transportes-WHS-BR"
+BIBLIOTECA: "Diretório_Operacionais"
+
+#Usuario 
+USERNAME: 'transporte.torre@solistica.com'
+PASSWORD: 'gi2SFc8s51'
+
+# Scopes necessários
+SCOPES: https://graph.microsoft.com/Sites.ReadWrite.All https://graph.microsoft.com/Files.ReadWrite.All

@@ -1,0 +1,9 @@
+console_menu==0.8.0
+googlemaps==4.10.0
+pandas==2.2.2
+py_console==0.1.6
+pywin32==306
+PyYAML==6.0.1
+Requests==2.32.3
+tqdm==4.66.1
+openpyxl

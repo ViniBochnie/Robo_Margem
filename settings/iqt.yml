@@ -1,0 +1,8 @@
+Saida: C:/Program Files/Python312/Projetos/Roteirizacao/Margem Consolidada/V3/saida/
+GerarIqt: True
+Formato: xlsx
+Arquivo: IQT {data}
+Exibir_Excel: True
+Tabela: Tabela2
+Planilha: Base
+SHAREPOINT_PATH: 'PROGRAMAÇAO DE TRANSPORTES/PROGRAMAÇÃO_H&N/Roteirização/FONTE DADOS POWER BI/IQT/'
