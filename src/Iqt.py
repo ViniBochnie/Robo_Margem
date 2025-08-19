@@ -124,11 +124,15 @@ def GerarIqt(app) -> list[str]:
         
         #atualiza km
         update_distances(sTemp, setup)
-    
+        
+        codex/fix-output-file-directory-for-iqt-l53j6c
         # salvar arquivo na pasta Base
         out_dir = os.path.normpath(setup.iqt.Saida)
         if os.path.basename(out_dir).lower() != "base":
             out_dir = os.path.join(out_dir, "Base")
+        #salvar arquivo na pasta Base
+        out_dir = os.path.join(setup.iqt.Saida, "Base")
+        main
         os.makedirs(out_dir, exist_ok=True)
 
         # 8) Monta o nome completo com extensão
