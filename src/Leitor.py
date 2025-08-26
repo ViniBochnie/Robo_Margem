@@ -29,8 +29,10 @@ class Leitor:
                     if ex(caminho):
 
                          temp_df = pd.read_excel(caminho,nrows=0) #cabecalho
+                         temp_cols = list(temp_df.columns)
+                         expected = getattr(settings,'Coluna_padrao')
 
-                         if list(temp_df.columns) == getattr(settings,'Coluna_padrao'):
+                         if temp_cols == expected:
                               self.log(f'CARREGANDO {filial.upper()}')
                               locals()[filial] = pd.read_excel(caminho)
                               locals()[filial] = locals()[filial].drop(locals()[filial].index[-1])
@@ -40,6 +42,8 @@ class Leitor:
                               break
                          else:
                               self.log(f'Colunas fora de ordem no arquivo {filial}. Corrija e tente novamente...')
+                              self.log(f"Esperado: {expected}")
+                              self.log(f"Encontrado: {temp_cols}")
                     else:
                          continue
 
