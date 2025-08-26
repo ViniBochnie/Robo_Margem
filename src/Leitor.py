@@ -29,8 +29,12 @@ class Leitor:
                     if ex(caminho):
 
                          temp_df = pd.read_excel(caminho,nrows=0) #cabecalho
+                         codex/add-logging-for-column-order-mismatch
                          temp_cols = list(temp_df.columns)
                          expected = getattr(settings,'Coluna_padrao')
+                         temp_cols = [c.strip().lower() for c in temp_df.columns]
+                         expected = [c.strip().lower() for c in settings.Coluna_padrao]
+                         main
 
                          if temp_cols == expected:
                               self.log(f'CARREGANDO {filial.upper()}')
